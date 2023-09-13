@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      /* Gaya tambahan untuk animasi masuk dan font "Bebas Neue" */
+      body {
+        background-color: #ffc6c7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Bebas Neue", sans-serif; /* Menggunakan font "Bebas Neue" */
+      }
+      .jumbotron {
+        background-color: #fffffe;
+        color: #343a40;
+        text-align: center;
+        /* box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5); */
+        animation: slideDown 2s ease-in-out forwards; /* Animasi fade-in */
+        border-radius: 30px;
+      }
+      .btn-primary {
+        background-color: #ffc6c7;
+        border-color: #ffc6c7;
+        /* box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5); */
+        /* animation: slideDown 2s ease-in-out forwards; */
+      }
+      .btn-primary:hover {
+        background-color: #ff8ba7;
+        border-color: #ff8ba7;
+        /* box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5); */
+      }
+      #surpriseBox {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Animasi fade-in */
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">HAPPY BIRTHDAY PO!</h1>
+        <p class="lead">This is for youuuu</p>
+        <hr class="my-4" />
+        <p>Cuma bisa kirim video dengan gaya wkwk</p>
+        <a class="btn btn-primary btn-lg" href="https://youtube.com/shorts/oFELA32pVHM?si=1mODpbq0KXlHH9pn" target="_blank">Click Here</a>
+      </div>
+    </div>
+
+    <div id="surpriseBox" class="container mt-4 text-center" style="display: none">
+      <h2>Ini dia kado kejutannya!</h2>
+      <img src="kado.jpg" alt="Kado Kejutan" class="img-fluid" />
+    </div>
+
+    <script>
+      // JavaScript untuk menampilkan kado kejutan saat tombol diklik
+      document.getElementById("btnSurprise").addEventListener("click", function () {
+        document.getElementById("surpriseBox").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
